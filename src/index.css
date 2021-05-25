@@ -14,3 +14,25 @@ main {
 .description {
 	margin-top: 30px;
 }
+.jumbotron {
+	width: 120%;
+	padding: none !important;
+	margin-left: -10% !important;
+	background: url('https://images.unsplash.com/uploads/1412876363615cd8b2122/cd54d92f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJlZXJzJTIwc2hlbHZlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')
+		center center/cover no-repeat;
+}
+.jumbotron-title {
+	font: bolder;
+	font-size: 50px;
+}
+
+.jumbotron-hours {
+	color: black;
+	font-size: 30px;
+	font: bolder;
+	margin-left: 80%;
+}
+
+.jumbotron-address {
+	margin-right: 10% !important;
+}

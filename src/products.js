@@ -19,7 +19,8 @@ const products = [
 		brand: 'Brixton Brewery ',
 		name: 'Cold Harbour Lager',
 		image: '/images/BrixtonCold.jpg',
-		blurb: 'A classic porter with dark ...',
+		blurb: 'Back in the day, travellers to London found shelter on Brixton’s Coldharbour Lane...',
+		alcoholvol: '4.4%',
 		description:
 			'Back in the day, travellers to London found shelter on Brixton’s Coldharbour Lane. These days it’s a free-spirited, anything goes kind of street, inspiring this pilsner-style beer. Coldharbour is full of fearless craft character',
 		price: 2.49,

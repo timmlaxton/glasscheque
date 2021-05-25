@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
+import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
 import products from '../products';
 
 const BeerInfoScreen = ({ match }) => {
 	const product = products.find((p) => p._id === match.params.id);
+	const [qty, setQty] = useState(1);
+
+	const addToCartHandler = () => {};
 
 	return (
 		<>
@@ -15,17 +18,62 @@ const BeerInfoScreen = ({ match }) => {
 				<Col md={6}>
 					<Image src={product.image} alt={product.name} fluid />
 				</Col>
-				<Col md={3}>
+				<Col md={4}>
 					<ListGroup variant="flush">
-						<ListGroup.Item>
+						<ListGroup>
 							<h3> {product.name}</h3>
 							<h4>Alc Vol {product.alcoholvol}</h4>
 							<h4>£{product.price}</h4>
-						</ListGroup.Item>
-						<ListGroup.Item>{product.blurb}</ListGroup.Item>
+						</ListGroup>
 					</ListGroup>
+
+					<Card className="add">
+						<ListGroup variant="flush">
+							<ListGroup.Item>
+								<Row>
+									<Col>
+										<h4> {product.countInStock > 0 ? 'In Stock' : 'Currently Unavailable'}</h4>
+									</Col>
+								</Row>
+							</ListGroup.Item>
+
+							{product.countInStock > 0 && (
+								<ListGroup.Item>
+									<Row>
+										<Col>Qty</Col>
+										<Col>
+											<Form.Control as="select" value={qty} onChange={(e) => setQty(e.target.value)}>
+												{[...Array(product.countInStock).keys()].map((x) => (
+													<option key={x + 1} value={x + 1}>
+														{' '}
+														{x + 1}
+													</option>
+												))}
+											</Form.Control>
+										</Col>
+									</Row>
+								</ListGroup.Item>
+							)}
+
+							<ListGroup.Item>
+								<Button
+									onClick={addToCartHandler}
+									className="btn-block"
+									type="button"
+									disabled={product.countInStock === 0}
+								>
+									Add To Cart
+								</Button>
+							</ListGroup.Item>
+						</ListGroup>
+					</Card>
 				</Col>
 			</Row>
+			<div className="description">
+				<Row>
+					<h5>{product.description} </h5>
+				</Row>
+			</div>
 		</>
 	);
 };

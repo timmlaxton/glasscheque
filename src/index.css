@@ -5,3 +5,12 @@ main {
 .back-button {
 	font-size: 80px;
 }
+
+.add {
+	border: none !important;
+	margin-left: -20px !important;
+}
+
+.description {
+	margin-top: 30px;
+}

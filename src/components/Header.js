@@ -25,7 +25,7 @@ const Header = () => {
 			<nav className="navbar">
 				<div className="navbar-container">
 					<Link to="/" className="navbar-logo" onClick={closedMobilemenu}>
-						Doon The Water
+						Pivo
 					</Link>
 					<div className="menu-icon" onClick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -37,18 +37,18 @@ const Header = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/services" className="nav-links" onClick={closedMobilemenu}>
-								Services
+							<Link to="/spirits" className="nav-links" onClick={closedMobilemenu}>
+								Spirits
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/products" className="nav-links" onClick={closedMobilemenu}>
-								Products
+							<Link to="/beer" className="nav-links" onClick={closedMobilemenu}>
+								Beer
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/sign-up" className="nav-links" onClick={closedMobilemenu}>
-								Sign Up
+							<Link to="/wine" className="nav-links" onClick={closedMobilemenu}>
+								Wine
 							</Link>
 						</li>
 					</ul>

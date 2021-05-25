@@ -8,20 +8,44 @@ import '../components/Cards.css';
 const HomeScreen = () => {
 	return (
 		<>
-			<div className="jumbotron">
-				<div className="jumbotron-address">157 Great Western Road</div>
-				<h1 className="jumbotron-hours">Hours</h1>
-				<p className="jumbotron-hours">
-					<p>Sun: 12 - 8 </p>
+			<Jumbotron>
+				<div className="jumbotron-address">
+					<p>Pivo</p>
+					<p>157 Great Western Road</p>
+					<p>Glasgow</p>
+					<p> G20 4BE </p>
+				</div>
+				<div className="jumbotron-hours">
+					Hours <p>Sun: 12 - 8 </p>
 					<p>Mon: 11- 9 </p>
 					<p>Tue: 11- 9 </p>
 					<p>Wed: 11- 9</p>
 					<p>Thr: 11- 9 </p>
 					<p>Fr: 11- 9 </p>
-					<p>Sat: 11- 9 </p>
-				</p>
+					<p>Sat: 11- 9 </p>{' '}
+				</div>
+			</Jumbotron>
+
+			{/* <div className="jumbotron">
+				<div className="jumbotron-address">
+					<p>Pivo</p>
+					<p>157 Great Western Road</p>
+					<p>Glasgow</p>
+					<p> G20 4BE </p>
+				</div>
+				<div className="jumbotron-hours">
+					Hours <p>Sun: 12 - 8 </p>
+					<p>Mon: 11- 9 </p>
+					<p>Tue: 11- 9 </p>
+					<p>Wed: 11- 9</p>
+					<p>Thr: 11- 9 </p>
+					<p>Fr: 11- 9 </p>
+					<p>Sat: 11- 9 </p>{' '}
+				</div>
+
+				<p className="jumbotron-hours"></p>
 				<hr class="my-4"></hr>
-			</div>
+			</div> */}
 			<Cards />
 			<h1>Beers</h1>
 			<Row className="cards__item">

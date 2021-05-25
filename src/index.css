@@ -1,5 +1,6 @@
 main {
 	min-height: 80vph;
+	@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 }
 
 .back-button {
@@ -28,11 +29,17 @@ main {
 
 .jumbotron-hours {
 	color: black;
-	font-size: 30px;
+	font-size: 25px;
 	font: bolder;
 	margin-left: 80%;
+	margin-top: -18%;
+	position: sticky;
 }
 
 .jumbotron-address {
-	margin-right: 10% !important;
+	margin-left: 10% !important;
+	margin-top: 2%;
+	color: black;
+	font-size: 30px;
+	font-family: 'Russo One', sans-serif;
 }

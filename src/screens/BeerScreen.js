@@ -1,16 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import HeroSection from '../components/HeroSection';
-import Cards from '../components/Cards';
 import Product from '../components/Product';
 import products from '../products';
-import '../components/Cards.css';
 
-const HomeScreen = () => {
+const BeerScreen = () => {
 	return (
 		<>
-			<HeroSection />
-			<Cards />
 			<h1>Beers</h1>
 			<Row className="cards__item">
 				{products.map((product) => (
@@ -23,4 +18,4 @@ const HomeScreen = () => {
 	);
 };
 
-export default HomeScreen;
+export default BeerScreen;

@@ -1,3 +1,7 @@
 main {
 	min-height: 80vph;
 }
+
+.back-button {
+	font-size: 80px;
+}

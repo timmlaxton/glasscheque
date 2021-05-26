@@ -42,7 +42,6 @@ const products = [
 		numReviews: 22
 	},
 	{
-		_id: '4',
 		brand: 'Black Isle',
 		category: 'Beer',
 		name: 'Porter',

@@ -1,7 +1,7 @@
 const products = [
 	{
-		_id: '1',
 		brand: 'Beaver Town ',
+		category: 'Beer',
 		name: 'Gamma-Ray',
 		image: '/images/Gamma.jpg',
 		blurb: 'Founded in 2011 by Logan Plant in the basement of a pub, the brewery has grown up ...',
@@ -15,8 +15,8 @@ const products = [
 		numReviews: 50
 	},
 	{
-		_id: '2',
 		brand: 'Brixton Brewery ',
+		category: 'Beer',
 		name: 'Cold Harbour Lager',
 		image: '/images/BrixtonCold.jpg',
 		blurb: 'Back in the day, travellers to London found shelter on Brixton’s Coldharbour Lane...',
@@ -29,8 +29,8 @@ const products = [
 		numReviews: 10
 	},
 	{
-		_id: '3',
 		brand: 'Black Isle ',
+		category: 'Beer',
 		name: 'GoldFinch IPA',
 		image: '/images/BlackIsleGold.jpg',
 		blurb: 'A classic porter with dark ...',
@@ -44,6 +44,7 @@ const products = [
 	{
 		_id: '4',
 		brand: 'Black Isle',
+		category: 'Beer',
 		name: 'Porter',
 		image: '/images/BlackIslePorter.jpg',
 		blurb: 'A classic porter with dark ...',
@@ -96,4 +97,4 @@ const products = [
 	// }
 ];
 
-module.exports = products;
+export default products;

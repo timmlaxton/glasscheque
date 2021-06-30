@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import { listProducts } from '../actions/productActions';
 import Product from '../components/Product';
 
-const BeerScreen = () => {
+const GinScreen = () => {
 	const dispatch = useDispatch();
 
 	const productDetails = useSelector((state) => state.productDetails);
@@ -21,7 +21,7 @@ const BeerScreen = () => {
 
 	return (
 		<>
-			<h1>Beers</h1>
+			<h1>Gins</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -29,7 +29,7 @@ const BeerScreen = () => {
 			) : (
 				<Row className="cards__item">
 					{products
-						.filter((product) => product.category === 'beer')
+						.filter((product) => product.category === 'gin')
 						.map((product) => (
 							<Col sm={3}>
 								<Product product={product} />
@@ -43,19 +43,19 @@ const BeerScreen = () => {
 					<p className="sub-title">Why not try one of these</p>
 				</div>
 			</div>
-			<div>
+			{/* <div>
 				<Row className="cards__item">
 					{products
-						.filter((_product) => _product.category === 'beer' && _product._id !== product._id)
+						.filter((_product) => _product.category === 'gin' && _product._id !== product._id)
 						.map((product) => (
 							<Col sm={3}>
 								<Product product={product} />
 							</Col>
 						))}
 				</Row>
-			</div>
+			</div> */}
 		</>
 	);
 };
 
-export default BeerScreen;
+export default GinScreen;

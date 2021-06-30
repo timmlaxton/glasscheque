@@ -5,8 +5,9 @@ import Message from '../components/Message';
 import { Row, Col } from 'react-bootstrap';
 import { listProducts } from '../actions/productActions';
 import Product from '../components/Product';
+import './WhiskeyScreen.css';
 
-const BeerScreen = () => {
+const WhiskeyScreen = () => {
 	const dispatch = useDispatch();
 
 	const productDetails = useSelector((state) => state.productDetails);
@@ -20,8 +21,7 @@ const BeerScreen = () => {
 	}, [dispatch]);
 
 	return (
-		<>
-			<h1>Beers</h1>
+		<div className="whiskey-container">
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -29,7 +29,7 @@ const BeerScreen = () => {
 			) : (
 				<Row className="cards__item">
 					{products
-						.filter((product) => product.category === 'beer')
+						.filter((product) => product.category === 'whiskey')
 						.map((product) => (
 							<Col sm={3}>
 								<Product product={product} />
@@ -46,7 +46,7 @@ const BeerScreen = () => {
 			<div>
 				<Row className="cards__item">
 					{products
-						.filter((_product) => _product.category === 'beer' && _product._id !== product._id)
+						.filter((_product) => _product.category === 'whiskey' && _product._id !== product._id)
 						.map((product) => (
 							<Col sm={3}>
 								<Product product={product} />
@@ -54,8 +54,8 @@ const BeerScreen = () => {
 						))}
 				</Row>
 			</div>
-		</>
+		</div>
 	);
 };
 
-export default BeerScreen;
+export default WhiskeyScreen;

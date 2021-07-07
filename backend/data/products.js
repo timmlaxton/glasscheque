@@ -8,7 +8,7 @@ const products = [
 		alcoholvol: '5.4%',
 		alcoholcon: '1.7',
 		description:
-			'Founded in 2011 by Logan Plant in the basement of a pub the brewery has grown up and become one of the flagship London breweries around. Taking its name from the old cockney name for the Victorian part of London De Beauvoir they quickly out grew the basement of Dukes Brew and Que relocated to Hackney Wick. After a short time there they realised they needed to grow again and made a final move over to Tottenham Hale in North London. There they have perfected brews such as Gamma Ray and gained a loyal fan base for their modern and forward thinking beers.',
+			'Founded pop in 2011 by Logan Plant in the basement of a pub the brewery has grown up and become one of the flagship London breweries around. Taking its name from the old cockney name for the Victorian part of London De Beauvoir they quickly out grew the basement of Dukes Brew and Que relocated to Hackney Wick. After a short time there they realised they needed to grow again and made a final move over to Tottenham Hale in North London. There they have perfected brews such as Gamma Ray and gained a loyal fan base for their modern and forward thinking beers.',
 		price: 2.81,
 		countInStock: 100,
 		rating: 4.1,
@@ -54,6 +54,19 @@ const products = [
 		rating: 4.5,
 		numReviews: 22
 	},
+	// {
+	// 	brand: 'Anspach',
+	// 	name: 'Anspach and Hobday The Sour Dry Hop',
+	// 	image: '/images/BlackIslePorter.jpg',
+	// 	category: 'beer',
+	// 	blurb: 'A classic porter with dark ...',
+	// 	description:
+	// 		'A classic porter with dark roasted chocolate malts producing a dry, velvety and full-bodied ruby black beer with notes of treacle and coffee. Best paired with a comfy chair, your favourite slippers and a roaring fire for a cosy night in.',
+	// 	price: 2.69,
+	// 	countInStock: 100,
+	// 	rating: 4.5,
+	// 	numReviews: 22
+	// },
 	{
 		brand: 'The Botanist ',
 		name: 'The Botanist ',
@@ -103,35 +116,37 @@ const products = [
 		numReviews: 22
 	},
 	{
-		brand: 'Talisker',
-		name: 'Talisker',
-		image: '/images/whiskey/Caol.jpg',
+		brand: 'Glenmorangie',
+		name: 'Glenmorangie',
+		image: '/images/glenmorangie.jpg',
 		category: 'whiskey',
 		description:
-			'The only malt from the Isle of Skye and a real classic, this is perfect to sit and savour at the end of the day. Peaty and smoky but not too peppery, its a smooth malt, with a comforting afterglow..',
+			'An elegant, floral spirit and the stalwart backbone of the Glenmorangie range. It has 10 years under its belt and aromas of citrus and ripening peaches, leading on to vanilla and flowery fruitiness on the palate, with a distinctively orangey finish.',
+
 		price: 43.99,
 		countInStock: 100,
 		rating: 4.5,
 		numReviews: 10
 	},
 	{
-		brand: 'Balvennie',
-		name: 'Balvennie',
-		image: '/images/whiskey/Caol.jpg',
+		brand: 'Glenfarclas',
+		name: 'Glenfarclas',
+		image: '/images/glenfarclas.jpg',
 		category: 'whiskey',
-		description: 'The Balvenie distillery is located in Dufftown on Speyside, in Scotland..',
+		description:
+			'A deeply rich cask strength single malt whisky made by Glenfarclas in Speyside. It displays apple and pear fruit flavours combined with toffee, fruit cake and spicy oak. Glenfarclas is one of the only family owned distilleries in Scotland. They focus on making a tradtional Speyside style malt influenced by ex-sherry oak barrels, that gives their whiskies a generous dried fruit character.',
 		price: 48.99,
 		countInStock: 100,
 		rating: 4.5,
 		numReviews: 26
 	},
 	{
-		brand: 'Glenfiddich',
-		name: 'Glenfiddich',
-		image: '/images/whiskey/Caol.jpg',
+		brand: 'Cragganmore',
+		name: 'Cragganmore',
+		image: '/images/cragganmore.jpg',
 		category: 'whiskey',
 		description:
-			'Although it is easy to dismiss the big names, without them the whisky industry wouldnt be what it is Glenfiddichs reputation is known across the world, and deservedly so. This whisky is matured in bourbon and sherry casks for at least 12 years, before being mellowed in an oak marrying tun. The result is a creamy, approachable malt packed with butterscotch and soft oak, but held together by a seam of refreshing, crisp pear.',
+			'Cragganmore was founded in 1869 by John Smith on Speyside. The Cragganmore distillery pulls its water from the mineral-rich Craggan burn, situated next to the distillery.',
 		price: 37.99,
 		countInStock: 100,
 		rating: 4.5,
@@ -140,7 +155,7 @@ const products = [
 	{
 		brand: 'Laphroaig',
 		name: 'Laphroaig',
-		image: '/images/whiskey/Caol.jpg',
+		image: '/images/laphroaig.jpg',
 		category: 'whiskey',
 		description:
 			'Pronounced "La-froyg", this pungent malt punches you in the nose with earthy peat smoke, fresh seaweed and nutty barley. The assault continues with a wallop of salty peat right in the mouth. It isnt all aggressive though as theres a beautiful mellow sweetness in there too. For a long time a little group of committed islanders have worked here to make what is thought to be the most particular single malt on the planet. Obviously after some time the general population change, yet our conventional techniques, the antiquated abilities and outright commitment to quality dependably remains.',

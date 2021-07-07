@@ -8,6 +8,7 @@ import BeerScreen from './screens/BeerScreen';
 import GinScreen from './screens/GinScreen';
 import WhiskeyScreen from './screens/WhiskeyScreen';
 import BeerInfoScreen from './screens/BeerInfoScreen';
+import WhiskeyInfoScreen from './screens/WhiskeyInfoScreen';
 import CartScreen from './screens/CartScreen';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 			<Container>
 				<Route path="/" component={HomeScreen} exact />
 				<Route path="/beer/:id" component={BeerInfoScreen} exact />
+				<Route path="/whiskey/:id" component={WhiskeyInfoScreen} exact />
 				<Route path="/beer" component={BeerScreen} exact />
 				<Route path="/spirits" component={GinScreen} exact />
 				<Route path="/whiskey" component={WhiskeyScreen} exact />

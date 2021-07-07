@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../actions/cartActions';
+import './CartScreen.css';
 
 const CartScreen = ({ match, location, history }) => {
 	const productId = match.params.id;
@@ -74,18 +75,20 @@ const CartScreen = ({ match, location, history }) => {
 					</ListGroup>
 				)}
 			</Col>
+
 			<Col md={4}>
 				<Card>
 					<ListGroup variant="flush">
 						<ListGroup.Item>
-							<h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>£
-							{cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
-							<Col md={4}>
-								{cartItems.map((item) => (
-									<Image src={item.image} alt={item.name} fluid rounded />
-								))}
-							</Col>
+							<h2>Order Summary ({cartItems.reduce((acc, item) => acc + item.qty, 0)})</h2>
+							<Row>
+								Items:
+								<div className="order-summary">
+									£{cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
+								</div>
+							</Row>
 						</ListGroup.Item>
+
 						<ListGroup.Item>
 							<Button type="button" className="btn-block" disabled={cartItems.length === 0} onClick={checkoutHandler}>
 								Checkout

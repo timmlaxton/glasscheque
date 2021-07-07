@@ -31,7 +31,7 @@ const GinScreen = () => {
 					{products
 						.filter((product) => product.category === 'gin')
 						.map((product) => (
-							<Col sm={3}>
+							<Col key={product._id} sm={3}>
 								<Product product={product} />
 							</Col>
 						))}
@@ -43,7 +43,7 @@ const GinScreen = () => {
 					<p className="sub-title">Why not try one of these</p>
 				</div>
 			</div>
-			{/* <div>
+			<div>
 				<Row className="cards__item">
 					{products
 						.filter((_product) => _product.category === 'gin' && _product._id !== product._id)
@@ -53,7 +53,7 @@ const GinScreen = () => {
 							</Col>
 						))}
 				</Row>
-			</div> */}
+			</div>
 		</>
 	);
 };

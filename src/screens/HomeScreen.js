@@ -94,7 +94,7 @@ const HomeScreen = () => {
 					{products
 						.filter((product) => product.category === 'beer')
 						.map((product) => (
-							<Col sm={3}>
+							<Col key={product._id} sm={3}>
 								<Product product={product} />
 							</Col>
 						))}
@@ -110,7 +110,7 @@ const HomeScreen = () => {
 					{products
 						.filter((product) => product.category === 'gin')
 						.map((product) => (
-							<Col sm={3}>
+							<Col key={product._id} sm={3}>
 								<Product product={product} />
 							</Col>
 						))}
@@ -126,7 +126,7 @@ const HomeScreen = () => {
 					{products
 						.filter((product) => product.category === 'whiskey')
 						.map((product) => (
-							<Col sm={3}>
+							<Col key={product._id} sm={3}>
 								<Product product={product} />
 							</Col>
 						))}

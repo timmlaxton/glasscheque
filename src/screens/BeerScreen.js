@@ -48,7 +48,7 @@ const BeerScreen = () => {
 					{products
 						.filter((_product) => _product.category === 'beer' && _product._id !== product._id)
 						.map((product) => (
-							<Col sm={3}>
+							<Col key={product._id} sm={3}>
 								<Product product={product} />
 							</Col>
 						))}

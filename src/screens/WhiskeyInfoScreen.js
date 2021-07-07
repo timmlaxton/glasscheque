@@ -8,7 +8,7 @@ import { listProductDetails } from '../actions/productActions';
 import Product from '../components/Product';
 import './BeerInfoScreen.css';
 
-const BeerInfoScreen = ({ match, history }) => {
+const WhiskeyInfoScreen = ({ match, history }) => {
 	const [qty, setQty] = useState(1);
 
 	const dispatch = useDispatch();
@@ -29,7 +29,7 @@ const BeerInfoScreen = ({ match, history }) => {
 
 	return (
 		<>
-			<Link className="back-button" to="/beer">
+			<Link className="back-button" to="/whiskey">
 				<i className="fas fa-arrow-circle-left"></i>
 			</Link>
 			{loading ? (
@@ -38,7 +38,7 @@ const BeerInfoScreen = ({ match, history }) => {
 				<Message variant="danger">{error}</Message>
 			) : (
 				<Row>
-					<Col key={product._id} md={6}>
+					<Col md={6}>
 						<Image src={product.image} alt={product.name} fluid />
 					</Col>
 					<Col md={4}>
@@ -94,7 +94,7 @@ const BeerInfoScreen = ({ match, history }) => {
 				</Row>
 			)}
 
-			<div className="beer-description">
+			<div className="whiskey-description">
 				<Row>
 					<div>{product.description} </div>
 				</Row>
@@ -108,7 +108,7 @@ const BeerInfoScreen = ({ match, history }) => {
 			<div>
 				<Row className="cards__item">
 					{products
-						.filter((_product) => _product.category === 'beer' && _product._id !== product._id)
+						.filter((_product) => _product.category === 'whiskey' && _product._id !== product._id)
 						.map((product) => (
 							<Col sm={3}>
 								<Product product={product} />
@@ -120,4 +120,4 @@ const BeerInfoScreen = ({ match, history }) => {
 	);
 };
 
-export default BeerInfoScreen;
+export default WhiskeyInfoScreen;

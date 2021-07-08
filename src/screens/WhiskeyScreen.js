@@ -39,23 +39,23 @@ const WhiskeyScreen = () => {
 							))}
 					</Row>
 				)}
-				{/* <div className="related-products">
-				<div className="page-title">
-					<h2>If you like this?</h2>
-					<p className="sub-title">Why not try one of these</p>
+				<div className="related-products">
+					<div className="page-title">
+						<h2>If you like this?</h2>
+						<p className="sub-title">Why not try one of these</p>
+					</div>
 				</div>
-			</div> */}
-				{/* <div>
-				<Row className="cards__item">
-					{products
-						.filter((_product) => _product.category === 'whiskey' && _product._id !== product._id)
-						.map((product) => (
-							<Col sm={3}>
-								<Product product={product} />
-							</Col>
-						))}
-				</Row>
-			</div> */}
+				<div>
+					<Row className="cards__item">
+						{products
+							.filter((_product) => _product.category === 'whiskey' && _product._id !== product._id)
+							.map((product) => (
+								<Col sm={3}>
+									<Product product={product} />
+								</Col>
+							))}
+					</Row>
+				</div>
 			</div>
 		</>
 	);

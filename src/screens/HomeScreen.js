@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col, Button, Jumbotron, Carousel } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
-import Cards from '../components/Cards';
 import Product from '../components/Product';
 import '../components/Cards.css';
 import { listProducts } from '../actions/productActions';
@@ -84,7 +83,9 @@ const HomeScreen = () => {
 				</div>
 			</div>
 
-			<h1 className="beer-title">Beers</h1>
+			<h1 className="beer-title">
+				<Link to="/beer">Beers</Link>
+			</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -100,7 +101,9 @@ const HomeScreen = () => {
 						))}
 				</Row>
 			)}
-			<h1>Spirits</h1>
+			<h1>
+				<Link to="/spirits">Spirits</Link>
+			</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (
@@ -116,7 +119,9 @@ const HomeScreen = () => {
 						))}
 				</Row>
 			)}
-			<h1>Whiskey</h1>
+			<h1>
+				<Link to="/whiskey">Whiskey</Link>
+			</h1>
 			{loading ? (
 				<Loader />
 			) : error ? (

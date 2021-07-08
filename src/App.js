@@ -9,6 +9,7 @@ import GinScreen from './screens/GinScreen';
 import WhiskeyScreen from './screens/WhiskeyScreen';
 import BeerInfoScreen from './screens/BeerInfoScreen';
 import WhiskeyInfoScreen from './screens/WhiskeyInfoScreen';
+import LoginScreen from './screens/LoginScreen';
 import CartScreen from './screens/CartScreen';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
 				<Route path="/spirits" component={GinScreen} exact />
 				<Route path="/whiskey" component={WhiskeyScreen} exact />
 				<Route path="/cart/:id?" component={CartScreen} />
+				<Route path="/login" component={LoginScreen} />
 			</Container>
 
 			<Footer />

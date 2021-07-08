@@ -1,0 +1,19 @@
+/* .container {
+	position: relative;
+	width: auto;
+	height: auto;
+} */
+
+.register-form {
+	position: absolute;
+	left: auto;
+	width: 200px;
+	height: 120px;
+}
+
+.login-form {
+	position: absolute;
+	left: 850px;
+	width: 200px;
+	height: 120px;
+}

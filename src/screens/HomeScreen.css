@@ -6,6 +6,8 @@
 
 .beer-title {
 	margin-top: 20px;
+	text-decoration: none !important;
+	color: black;
 }
 
 .delivery-discount {

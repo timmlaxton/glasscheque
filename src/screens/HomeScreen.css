@@ -1,22 +1,45 @@
 .carousel {
-	max-width: 80%;
-	margin: 0 auto;
-	position: center;
+  max-width: 80%;
+  margin: 0 auto;
+  position: center;
 }
 
 .beer-title {
-	margin-top: 20px;
-	text-decoration: none !important;
-	color: black;
+  margin-top: 20px;
+  text-decoration: none !important;
+  color: black;
 }
 
 .delivery-discount {
-	background-color: mediumvioletred;
-	color: white;
-	text-align: center;
-	width: 70.5vw;
-	height: 15vh;
-	margin-top: 20px;
-	margin-left: 110px;
-	margin-bottom: 10px;
+  background-color: mediumvioletred;
+  color: white;
+  text-align: center;
+  width: 70.5vw;
+  height: 15vh;
+  margin-top: 20px;
+  margin-left: 110px;
+  margin-bottom: 10px;
+}
+
+.newsletter {
+  border: solid;
+  margin-top: 10px;
+  background-color: teal;
+  height: 120px;
+}
+
+.newsletter-form {
+  position: relative;
+}
+
+.newsletter-label {
+  margin-right: 100%;
+  top: 35px;
+}
+
+.newsletter-button {
+  width: 120px;
+  position: absolute;
+  margin-left: 100%;
+  top: 30px;
 }

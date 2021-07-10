@@ -4,16 +4,20 @@
 	height: auto;
 } */
 
-.register-form {
-	position: absolute;
-	left: auto;
-	width: 200px;
-	height: 120px;
+.register-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.login-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .login-form {
-	position: absolute;
-	left: 850px;
-	width: 200px;
-	height: 120px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
